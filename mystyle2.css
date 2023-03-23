@@ -2,12 +2,15 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
  /* Structure */
 
  .picture {
     display: block;
+    margin: 10px;
  }
  img {
     display:block;
@@ -21,7 +24,8 @@ a {
 }
 
 p a, li a {
-    display: inline-block;
+    display: flex;
+    list-style: none;
     color: var(--color);
     text-decoration: underline;
     /* sets links in paragraphs and list items blue with an underline */
@@ -49,12 +53,12 @@ html {
     border: 10px solid pink;
   }
     
-.inner-column {
+.header {
     display: block;
-    border: 4px solid orange;
     padding: 10px;
     width: 98%;
     max-width: 900px;
+    max-height: 20px;
     margin-right:auto;
     margin-left: auto;
 
@@ -83,7 +87,7 @@ section {
 
 }
 .diptych picture{
-   
+   margin: 10px;
 }
 .diptych text-content{
     display: block;
@@ -142,4 +146,109 @@ section {
 .welcome {
     background-color: var(--dark); /*this should be dark but it ain't workin' yo*/
     color: var(--white);
+    flex: display;
+    justify-content: space-between;
+
+}
+
+.inner-column {
+    display: flex;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes {
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+span { /*for text below square boxes*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.boxy-section h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section3 {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    flex: display;
+    justify-content: center;
+    flex-direction: column;
+}
+.author {
+    color:#1F2937;
+    font-weight: bold;
+    align-self: flex-end; /*this is supposed to make it flush to the end of the page no matter if it shrinks the page...*/
+}
+
+.section3.quote-box { /*I'm trying to make the quote paragraph centered*/
+    flex: display;
+    justify-content: center;
+}
+
+.section4 {
+    padding: 55px 88px;
+
+}
+.call-to-action {
+    background-color: #3882F6;
+    border-radius: 4px;
+    color:floralwhite;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.call-to-action-button {
+    display: inline-block;
+    background-color: var(--color); /*takes on color from html selector above- can be used if there's a like a brand-wide color or something */
+    color: white;
+    font-size: .5rem;
+    padding: 10px 20px;
+    border: 4px solid #E5E7EB;
+    border-radius: 6px;
+}
+
+.footer{
+    background-color:#1F2937;
+    color:#E5E7EB;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 9px;
 }
