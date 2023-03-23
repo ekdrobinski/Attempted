@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+}
+header {
+    color: #3882F6;
+}
+.dark-part {
+    background-color: #1F2937;
+    color:#E5E7EB;
+}
+.dark-part {
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.extra-bold {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+.light-blue {
+    color:#3882F6;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.light-part {
+    background-color: #E5E7EB;
+    color:#1F2937;
+    padding-top: 1px;
+}
+.big-dark-bold {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.huge-italics {
+    font-weight: 100;
+    font-size: 36px;
+}
